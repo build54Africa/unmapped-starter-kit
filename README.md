@@ -39,7 +39,7 @@ This kit has what you need for each day. No code is needed, and if you do code, 
 
 ## Build your product
 
-Click **Use this template** at the top of this page to get your own copy of the kit, then follow the [product starter](product/README.md). It covers a web app, a Telegram bot and a no-code route.
+Click **Use this template** at the top of this page to get your own copy of the kit, then follow the [product starter](product/README.md). It takes you from that copy to a live web app link, all in your browser, and also covers a Telegram bot and no-code tools.
 
 ## For maintainers
 

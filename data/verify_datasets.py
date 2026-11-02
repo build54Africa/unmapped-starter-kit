@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Recheck every page, licence and direct data URL in datasets.json."""
+# Run: python data/verify_datasets.py        (add --update to record today's results in datasets.json)
 
 from __future__ import annotations
 
@@ -14,11 +15,12 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
 CATALOG = ROOT / "datasets.json"
+BROWSER = "Mozilla/5.0 (Build54 Unmapped dataset check)"
 
 
 def curl_status(url: str) -> int:
     result = subprocess.run(
-        ["curl", "-L", "--max-time", "60", "--retry", "2", "-sS", "-o", "/dev/null", "-w", "%{http_code}", url],
+        ["curl", "-L", "-A", BROWSER, "--max-time", "60", "--retry", "2", "-sS", "-o", "/dev/null", "-w", "%{http_code}", url],
         text=True,
         capture_output=True,
         check=False,
@@ -32,7 +34,7 @@ def curl_status(url: str) -> int:
 def curl_download(url: str, destination: str) -> tuple[int, str, int]:
     result = subprocess.run(
         [
-            "curl", "-L", "--max-time", "180", "--retry", "2", "-sS",
+            "curl", "-L", "-A", BROWSER, "--max-time", "180", "--retry", "2", "-sS",
             "-o", destination, "-w", "%{http_code}\n%{content_type}\n%{size_download}", url,
         ],
         text=True,
@@ -87,8 +89,10 @@ def main() -> int:
                     and parse_ok
                 )
                 # Some sites refuse scripted visits to their web pages; a browser still opens them, so warn only.
-                warnings = [f"{label} link {code}" for label, code in (("page", page_http), ("licence", license_http))
-                            if not 200 <= code < 400]
+                # 202 and 403 are usually a bot check that a browser passes; anything else is worth a look.
+                warnings = [f"{label} link {code}{' (bot check)' if code in (202, 403) else ''}"
+                            for label, code in (("page", page_http), ("licence", license_http))
+                            if code != 200 and not 300 <= code < 400]
                 dataset["verification"] = {
                     "date": today,
                     "result": "pass" if passed else "fail",

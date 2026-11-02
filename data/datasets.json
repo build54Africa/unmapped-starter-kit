@@ -622,7 +622,8 @@
         "format": "CSV",
         "license": {
           "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
-          "url": "https://databrowser.uis.unesco.org/terms-and-conditions"
+          "url": "https://api.ourworldindata.org/v1/indicators/1271645.metadata.json",
+          "credit": "UNESCO Institute for Statistics, with processing by Our World in Data"
         },
         "countries": [
           "Nigeria",
@@ -668,7 +669,8 @@
         "format": "CSV",
         "license": {
           "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
-          "url": "https://databrowser.uis.unesco.org/terms-and-conditions"
+          "url": "https://api.ourworldindata.org/v1/indicators/1271679.metadata.json",
+          "credit": "UNESCO Institute for Statistics, with processing by Our World in Data"
         },
         "countries": [
           "Nigeria",
@@ -714,7 +716,8 @@
         "format": "CSV",
         "license": {
           "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
-          "url": "https://databrowser.uis.unesco.org/terms-and-conditions"
+          "url": "https://api.ourworldindata.org/v1/indicators/1271634.metadata.json",
+          "credit": "UNESCO Institute for Statistics, with processing by Our World in Data"
         },
         "countries": [
           "Nigeria",
@@ -780,7 +783,8 @@
         "format": "CSV",
         "license": {
           "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-          "url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"
+          "url": "https://api.ourworldindata.org/v1/indicators/1033768.metadata.json",
+          "credit": "World Bank, with processing by Our World in Data"
         },
         "countries": [
           "Nigeria",
@@ -826,7 +830,8 @@
         "format": "CSV",
         "license": {
           "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-          "url": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators"
+          "url": "https://api.ourworldindata.org/v1/indicators/1294726.metadata.json",
+          "credit": "International Labour Organization and World Bank, with processing by Our World in Data"
         },
         "countries": [
           "Nigeria",
@@ -872,7 +877,8 @@
         "format": "CSV",
         "license": {
           "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-          "url": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators"
+          "url": "https://api.ourworldindata.org/v1/indicators/1294723.metadata.json",
+          "credit": "International Labour Organization and World Bank, with processing by Our World in Data"
         },
         "countries": [
           "Nigeria",

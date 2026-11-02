@@ -16,14 +16,26 @@ FALLBACK_NAMES = (("y",), ("x",))
 
 
 def load_table(path: str | Path) -> pd.DataFrame:
-    """Read a CSV, Excel or JSON file into a table."""
+    """Read a CSV, Excel (.xlsx) or JSON file into a table."""
     path = Path(path)
     suffix = path.suffix.lower()
-    if suffix in (".xlsx", ".xls"):
+    if suffix == ".xls":
+        raise ValueError("Old .xls files are not supported. Save the file as .xlsx or .csv first.")
+    if suffix == ".xlsx":
         return pd.read_excel(path)
     if suffix == ".json":
         return pd.read_json(path)
     return pd.read_csv(path)
+
+
+def keep_columns(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    """Only the listed columns, in that order. An empty list keeps every column."""
+    if not columns:
+        return df
+    missing = [column for column in columns if column not in df.columns]
+    if missing:
+        raise ValueError(f"These columns are not in your data: {', '.join(missing)}. Check the spelling.")
+    return df[columns]
 
 
 def location_columns(df: pd.DataFrame) -> tuple[str, str] | None:
@@ -103,13 +115,14 @@ def summarise(df: pd.DataFrame, value_column: str, group_column: str, how: str =
     return result.dropna().sort_values(ascending=False)
 
 
-def describe_row(row: pd.Series, limit: int = 6) -> str:
-    """One row as short "column: value" lines, for chat replies."""
+def describe_row(row: pd.Series, limit: int = 6, longest: int = 200) -> str:
+    """One row as short "column: value" lines for chat replies, with long values cut short."""
     lines = []
     for column, value in row.items():
         if pd.isna(value) or str(value).strip() == "":
             continue
-        lines.append(f"{column}: {value}")
+        text = str(value).strip()
+        lines.append(f"{column}: {text if len(text) <= longest else text[:longest - 1] + '…'}")
         if len(lines) == limit:
             break
     return "\n".join(lines)

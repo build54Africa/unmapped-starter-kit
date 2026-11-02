@@ -2,8 +2,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from lookup import (apply_filters, describe_row, filter_choices, load_table, location_columns, number_columns,
-                    points_table, search, summarise)
+import pytest
+
+from lookup import (apply_filters, describe_row, filter_choices, keep_columns, load_table, location_columns,
+                    number_columns, points_table, search, summarise)
 
 DATA = Path(__file__).resolve().parents[1] / "data.csv"
 
@@ -57,3 +59,19 @@ def test_map_exports_with_x_and_y_columns_still_get_a_map():
     healthsites = pd.DataFrame({"X": [30.5577], "Y": [-2.0103], "name": ["Kabarondo Health Centre"]})
     assert location_columns(healthsites) == ("Y", "X")
     assert location_columns(pd.DataFrame({"x": [500.0], "y": [900.0]})) is None
+
+
+def test_only_the_chosen_columns_are_shown_and_old_excel_files_get_a_clear_message(tmp_path):
+    assert list(keep_columns(table(), ["town", "name"]).columns) == ["town", "name"]
+    assert len(keep_columns(table(), []).columns) == 10
+    with pytest.raises(ValueError, match="not in your data: phone"):
+        keep_columns(table(), ["name", "phone"])
+    old = tmp_path / "old.xls"
+    old.write_bytes(b"not really excel")
+    with pytest.raises(ValueError, match="Save the file as .xlsx or .csv"):
+        load_table(old)
+
+
+def test_long_values_are_cut_short_in_chat_replies():
+    line = describe_row(pd.Series({"notes": "x" * 500}))
+    assert len(line) == len("notes: ") + 200 and line.endswith("…")

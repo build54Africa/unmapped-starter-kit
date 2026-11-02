@@ -60,13 +60,13 @@ df = pd.read_csv("https://power.larc.nasa.gov/api/temporal/daily/point?parameter
 df = pd.read_csv("https://ourworldindata.org/grapher/school-completion.csv?v=1&csvType=full&useColumnShortNames=false", storage_options={"User-Agent": "Mozilla/5.0"})
 ```
 
-- **Format:** CSV, about 177 KB. **Licence:** [CC BY 3.0 IGO](https://databrowser.uis.unesco.org/terms-and-conditions).
+- **Format:** CSV, about 177 KB. **Licence:** [CC BY 3.0 IGO](https://api.ourworldindata.org/v1/indicators/1271645.metadata.json), as stated for this file (credit UNESCO Institute for Statistics and Our World in Data).
 - **What's missing:** Completion does not show whether pupils learned, repeated grades, faced disability barriers or lacked devices and data; many values are modeled.
 
 ### More learning data
 
-- [Children one year before primary school who are out of school](https://ourworldindata.org/grapher/children-not-in-school) — national out-of-school rates for every country, with few years for Nigeria, Kenya and Rwanda; CSV, about 81 KB; [CC BY 3.0 IGO](https://databrowser.uis.unesco.org/terms-and-conditions). **What's missing:** National averages and sparse years hide district, disability, gender, displacement and household-cost barriers.
-- [Adult literacy rate](https://ourworldindata.org/grapher/literacy) — basic adult literacy observations for every country, including the three; CSV, about 59 KB; [CC BY 3.0 IGO](https://databrowser.uis.unesco.org/terms-and-conditions). **What's missing:** Surveys are rare and inconsistent, and basic literacy does not show practical, digital or language-specific skills.
+- [Children one year before primary school who are out of school](https://ourworldindata.org/grapher/children-not-in-school) — national out-of-school rates for every country, with few years for Nigeria, Kenya and Rwanda; CSV, about 81 KB; [CC BY 3.0 IGO](https://api.ourworldindata.org/v1/indicators/1271679.metadata.json), as stated for this file (credit UNESCO Institute for Statistics and Our World in Data). **What's missing:** National averages and sparse years hide district, disability, gender, displacement and household-cost barriers.
+- [Adult literacy rate](https://ourworldindata.org/grapher/literacy) — basic adult literacy observations for every country, including the three; CSV, about 59 KB; [CC BY 3.0 IGO](https://api.ourworldindata.org/v1/indicators/1271634.metadata.json), as stated for this file (credit UNESCO Institute for Statistics and Our World in Data). **What's missing:** Surveys are rare and inconsistent, and basic literacy does not show practical, digital or language-specific skills.
 
 ## Money and work
 
@@ -76,10 +76,10 @@ df = pd.read_csv("https://ourworldindata.org/grapher/school-completion.csv?v=1&c
 df = pd.read_csv("https://ourworldindata.org/grapher/mobile-money-account-usage.csv?v=1&csvType=full&useColumnShortNames=false", storage_options={"User-Agent": "Mozilla/5.0"})
 ```
 
-- **Format:** CSV, about 8 KB. **Licence:** [CC BY 4.0](https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets).
+- **Format:** CSV, about 8 KB. **Licence:** [CC BY 4.0](https://api.ourworldindata.org/v1/indicators/1033768.metadata.json), as stated for this file (credit World Bank and Our World in Data).
 - **What's missing:** A few survey waves cannot show agent reliability, fees, failed transactions, gender gaps or people who share phones and accounts.
 
 ### More money and work data
 
-- [Share of workers in vulnerable employment](https://ourworldindata.org/grapher/share-in-vulnerable-employment) — annual ILO and World Bank modeled estimates for every country, 1991–2025; CSV, about 205 KB; [CC BY 4.0](https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators). **What's missing:** National estimates cannot reveal daily earnings, unpaid work, job security, seasonal shocks or local forms of informality.
-- [Employment-to-population ratio](https://ourworldindata.org/grapher/employment-to-population-ratio) — annual modeled employment rates for every country, 1991–2025; CSV, about 188 KB; [CC BY 4.0](https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators). **What's missing:** Being employed says nothing about hours, income, safety, benefits, unpaid family work or whether a job is formal.
+- [Share of workers in vulnerable employment](https://ourworldindata.org/grapher/share-in-vulnerable-employment) — annual ILO and World Bank modeled estimates for every country, 1991–2025; CSV, about 205 KB; [CC BY 4.0](https://api.ourworldindata.org/v1/indicators/1294726.metadata.json), as stated for this file (credit International Labour Organization and World Bank and Our World in Data). **What's missing:** National estimates cannot reveal daily earnings, unpaid work, job security, seasonal shocks or local forms of informality.
+- [Employment-to-population ratio](https://ourworldindata.org/grapher/employment-to-population-ratio) — annual modeled employment rates for every country, 1991–2025; CSV, about 188 KB; [CC BY 4.0](https://api.ourworldindata.org/v1/indicators/1294723.metadata.json), as stated for this file (credit International Labour Organization and World Bank and Our World in Data). **What's missing:** Being employed says nothing about hours, income, safety, benefits, unpaid family work or whether a job is formal.

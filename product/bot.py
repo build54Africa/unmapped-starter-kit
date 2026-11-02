@@ -10,15 +10,18 @@ The bot runs while this program runs. To keep it online, run it on a server or a
 import os
 from pathlib import Path
 
-from lookup import describe_row, load_table, search
+from lookup import describe_row, keep_columns, load_table, search
 
 # Change these settings, and replace data.csv with your adapted dataset.
 BOT_NAME = "Clinic Finder"
 WELCOME = "Send me a town, a name or a service and I'll find matching places in our data."
 DATA_FILE = Path(__file__).parent / "data.csv"
 MAX_RESULTS = 3
+# Anyone who messages the bot can see these columns. List only the ones people need. Empty shows every column.
+SHOW_COLUMNS = []
+TELEGRAM_LIMIT = 4096  # the longest message Telegram accepts
 
-TABLE = load_table(DATA_FILE)
+TABLE = keep_columns(load_table(DATA_FILE), SHOW_COLUMNS)
 
 
 def answer(query: str) -> str:
@@ -29,7 +32,11 @@ def answer(query: str) -> str:
     replies = [describe_row(row) for _, row in rows.head(MAX_RESULTS).iterrows()]
     extra = len(rows) - MAX_RESULTS
     more = f"\n\n{extra} more matched. Add a word to narrow it down." if extra > 0 else ""
-    return "\n\n".join(replies) + more
+    reply = "\n\n".join(replies)
+    room = TELEGRAM_LIMIT - len(more)
+    if len(reply) > room:
+        reply = reply[: room - 1] + "…"
+    return reply + more
 
 
 async def start(update, context):

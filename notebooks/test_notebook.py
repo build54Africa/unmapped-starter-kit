@@ -243,6 +243,39 @@ def assert_fake_signatures(fake_dir):
     finally:
         sys.path.pop(0)
         sys.modules.pop("adaption", None)
+    compare_with_installed_sdk(fake_dir)
+
+
+def compare_with_installed_sdk(fake_dir):
+    """When the pinned adaption package is installed, the fake must match its signatures exactly."""
+    import importlib.util
+    import subprocess
+
+    script = textwrap.dedent('''
+        import inspect, json, sys
+        from adaption import Adaption
+        from adaption.resources.datasets.datasets import DatasetsResource
+        names = ["upload_file", "get_status", "adapt", "wait_for_completion", "download"]
+        print(json.dumps({
+            "client": list(inspect.signature(Adaption.__init__).parameters)[1:],
+            **{name: list(inspect.signature(getattr(DatasetsResource, name)).parameters) for name in names},
+        }))
+    ''')
+    if importlib.util.find_spec("adaption") is None:
+        print("NOTE: adaption is not installed, so the fake was not compared with the real SDK.")
+        return
+    real = json.loads(subprocess.run([sys.executable, "-c", script], capture_output=True, text=True, check=True).stdout)
+    sys.path.insert(0, str(fake_dir))
+    try:
+        import adaption as fake
+
+        assert list(inspect.signature(fake.Adaption).parameters) == real["client"]
+        for name in ("upload_file", "get_status", "adapt", "wait_for_completion", "download"):
+            assert list(inspect.signature(getattr(fake.DatasetsResource, name)).parameters) == real[name], name
+    finally:
+        sys.path.pop(0)
+        sys.modules.pop("adaption", None)
+    print("PASS: the fake SDK matches the installed adaption signatures.")
 
 
 def flip(notebook, tag, old, new):
@@ -304,10 +337,13 @@ def main():
 
         # 2. The scan flags columns that hold contact details.
         personal = work / "personal.csv"
-        pd.DataFrame({"town": ["Ikeja", "Huye"], "contact": ["ada@example.com", "+234 803 555 0199"]}).to_csv(personal, index=False)
+        pd.DataFrame({"Entity": ["Ghana", "Nigeria"], "town": ["Accra", "Ikeja"],
+                      "contact": ["ada@example.com", "+234 803 555 0199"]}).to_csv(personal, index=False)
         scanned, _ = execute(nbformat.read(NOTEBOOK, as_version=4), work, personal, fake_dir, allow_errors=True)
         scan = output_text(scanned)
         assert "email addresses" in scan and "possible phone numbers" in scan
+        # Your own data keeps every country; only the global samples are cut to Nigeria, Kenya and Rwanda.
+        assert "Loaded 2 rows" in scan and "Kept rows for" not in scan
 
         # 3. With both switches on, the whole notebook runs and spends only after the estimate.
         notebook = nbformat.read(NOTEBOOK, as_version=4)
@@ -341,6 +377,7 @@ def main():
             assert heading in card, heading
         assert "Result: succeeded" in card and "Rows after Adaptive Data: 3" in card
         assert "value (50.0% blank)" in card
+        assert "Source: TODO: name the source" in card and "Licence: TODO: copy it from the source page" in card
 
     print(f"PASS: executed {len(code_cells)} code cells with the fake adaption SDK.")
     print("PASS: the upload waits for the personal-data check, and the scan flags emails and phone numbers.")

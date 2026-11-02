@@ -8,14 +8,17 @@ from pathlib import Path
 
 import streamlit as st
 
-from lookup import (apply_filters, filter_choices, load_table, location_columns, number_columns,
+from lookup import (apply_filters, filter_choices, keep_columns, load_table, location_columns, number_columns,
                     points_table, search, summarise)
 
-# 1. Change these four settings.
+# 1. Change these settings.
 APP_TITLE = "Clinic Finder"
 APP_INTRO = "Find a health facility near you and how long people wait there. These are example rows: replace data.csv with your own data."
-DATA_FILE = "data.csv"  # your adapted dataset (CSV, Excel or JSON), in this folder
+DATA_FILE = "data.csv"  # your adapted dataset (CSV, .xlsx or JSON), in this folder
 DATA_NOTE = "Data: example rows made up for the Unmapped starter. Replace this line with your source and a link to your data card."
+# Everyone who opens the app can see and download these columns. List only the ones people need,
+# for example ["name", "town", "services"]. Leave it empty to show every column.
+SHOW_COLUMNS = []
 
 st.set_page_config(page_title=APP_TITLE, layout="wide")
 
@@ -29,7 +32,7 @@ path = Path(__file__).parent / DATA_FILE
 if not path.exists():
     st.error(f"Put your dataset in the same folder as app.py and call it {DATA_FILE}.")
     st.stop()
-table = load(str(path))
+table = keep_columns(load(str(path)), SHOW_COLUMNS)
 
 st.title(APP_TITLE)
 st.write(APP_INTRO)
