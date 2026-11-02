@@ -32,7 +32,7 @@ This kit has what you need for each day. No code is needed, and if you do code, 
 
 ## Run your data through Adaption
 
-1. [Open the notebook in Colab](https://colab.research.google.com/github/build54Africa/unmapped-starter-kit/blob/main/notebooks/unmapped_starter.ipynb) and save a copy to your Google Drive (File, then Save a copy in Drive).
+1. [Open the notebook in Colab](https://colab.research.google.com/github/build54Africa/unmapped-starter-kit/blob/main/notebooks/unmapped_starter.ipynb), sign in with Google and click **Copy to Drive**, so you work in your own copy.
 2. Add your API key as a Colab secret called `ADAPTION_API_KEY`: click the key icon on the left.
 3. Run the cells from top to bottom. The notebook checks your data, shows the credit estimate first, and spends credits only when you switch it on.
 4. Share your copy (Share, then "Anyone with the link") and paste that link into the Build54 task.
