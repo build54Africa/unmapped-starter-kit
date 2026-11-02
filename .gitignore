@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.ipynb_checkpoints/
+unmapped_input.csv
+adapted.csv
+DATA_CARD.md
+!templates/DATA_CARD.md
+.env
+.DS_Store

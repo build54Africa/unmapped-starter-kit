@@ -1,0 +1,915 @@
+{
+  "health": {
+    "title": "Health",
+    "sample": {
+      "name": "Rwanda Healthsites",
+      "url": "https://data.humdata.org/dataset/67ca8390-678a-4eb0-8c06-a12d86df1033/resource/752482cc-e7a0-4898-8653-113d0373fba6/download/rwanda.csv",
+      "reader": "read_csv",
+      "read_kwargs": {},
+      "rows": 1359,
+      "columns": [
+        "X",
+        "Y",
+        "osm_id",
+        "osm_type",
+        "completeness",
+        "amenity",
+        "healthcare",
+        "name",
+        "operator",
+        "source",
+        "speciality",
+        "operator_type",
+        "operational_status",
+        "opening_hours",
+        "beds",
+        "staff_doctors",
+        "staff_nurses",
+        "health_amenity_type",
+        "dispensing",
+        "wheelchair",
+        "emergency",
+        "insurance",
+        "water_source",
+        "electricity",
+        "is_in_health_area",
+        "is_in_health_zone",
+        "url",
+        "addr_housenumber",
+        "addr_street",
+        "addr_postcode",
+        "addr_city",
+        "changeset_id",
+        "changeset_version",
+        "changeset_timestamp",
+        "uuid"
+      ],
+      "direct_load_verified": true,
+      "verified_date": "2026-11-02"
+    },
+    "datasets": [
+      {
+        "name": "Rwanda Healthsites",
+        "publisher": "Open Healthsite Consulting",
+        "page_url": "https://data.humdata.org/dataset/rwanda-healthsites",
+        "direct_url": "https://data.humdata.org/dataset/67ca8390-678a-4eb0-8c06-a12d86df1033/resource/752482cc-e7a0-4898-8653-113d0373fba6/download/rwanda.csv",
+        "format": "CSV",
+        "license": {
+          "name": "Open Data Commons Open Database License (ODbL) v1.0",
+          "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+        },
+        "countries": [
+          "Rwanda"
+        ],
+        "years": "Current snapshot; source changesets span 2011–2026",
+        "approx_size_bytes": 247283,
+        "approx_size": "247 KB",
+        "update_frequency": "About every 90 days",
+        "missing": "Many facilities have blank fields for beds, staffing, opening hours, electricity, water, accessibility and services, and community-mapped places may be incomplete or stale.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,special",
+          "downloaded_bytes": 247283,
+          "parse_ok": true,
+          "rows": 1359,
+          "columns": [
+            "X",
+            "Y",
+            "osm_id",
+            "osm_type",
+            "completeness",
+            "amenity",
+            "healthcare",
+            "name",
+            "operator",
+            "source",
+            "speciality",
+            "operator_type",
+            "operational_status",
+            "opening_hours",
+            "beds",
+            "staff_doctors",
+            "staff_nurses",
+            "health_amenity_type",
+            "dispensing",
+            "wheelchair",
+            "emergency",
+            "insurance",
+            "water_source",
+            "electricity",
+            "is_in_health_area",
+            "is_in_health_zone",
+            "url",
+            "addr_housenumber",
+            "addr_street",
+            "addr_postcode",
+            "addr_city",
+            "changeset_id",
+            "changeset_version",
+            "changeset_timestamp",
+            "uuid"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Kenya Healthsites",
+        "publisher": "Open Healthsite Consulting",
+        "page_url": "https://data.humdata.org/dataset/kenya-healthsites",
+        "direct_url": "https://data.humdata.org/dataset/df79db22-da00-4c05-bda0-79c14f27132d/resource/8c6a79a0-469d-474c-a57d-fcb7bb509acb/download/kenya.csv",
+        "format": "CSV",
+        "license": {
+          "name": "Open Data Commons Open Database License (ODbL) v1.0",
+          "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+        },
+        "countries": [
+          "Kenya"
+        ],
+        "years": "Current snapshot; source changesets span 2009–2026",
+        "approx_size_bytes": 513066,
+        "approx_size": "513 KB",
+        "update_frequency": "About every 90 days",
+        "missing": "Facility locations are useful, but staffing, stock-outs, prices, queues and even operating status are often absent or unevenly maintained.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,special",
+          "downloaded_bytes": 513066,
+          "parse_ok": true,
+          "rows": 2640,
+          "columns": [
+            "X",
+            "Y",
+            "osm_id",
+            "osm_type",
+            "completeness",
+            "amenity",
+            "healthcare",
+            "name",
+            "operator",
+            "source",
+            "speciality",
+            "operator_type",
+            "operational_status",
+            "opening_hours",
+            "beds",
+            "staff_doctors",
+            "staff_nurses",
+            "health_amenity_type",
+            "dispensing",
+            "wheelchair",
+            "emergency",
+            "insurance",
+            "water_source",
+            "electricity",
+            "is_in_health_area",
+            "is_in_health_zone",
+            "url",
+            "addr_housenumber",
+            "addr_street",
+            "addr_postcode",
+            "addr_city",
+            "changeset_id",
+            "changeset_version",
+            "changeset_timestamp",
+            "uuid"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Nigeria Healthsites",
+        "publisher": "Open Healthsite Consulting",
+        "page_url": "https://data.humdata.org/dataset/nigeria-healthsites",
+        "direct_url": "https://data.humdata.org/dataset/fea18f4e-0463-4194-a21c-602e48e098e1/resource/1b4b743d-3619-4b42-ba11-f4936b7935d7/download/nigeria.csv",
+        "format": "CSV",
+        "license": {
+          "name": "Open Data Commons Open Database License (ODbL) v1.0",
+          "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+        },
+        "countries": [
+          "Nigeria"
+        ],
+        "years": "Current snapshot; source changesets span 2009–2026",
+        "approx_size_bytes": 1319853,
+        "approx_size": "1.32 MB",
+        "update_frequency": "About every 90 days",
+        "missing": "Coverage depends on community and institutional contributions, so rural facilities and details about staff, costs, medicines and waiting times can be missing.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,special",
+          "downloaded_bytes": 1319853,
+          "parse_ok": true,
+          "rows": 7253,
+          "columns": [
+            "X",
+            "Y",
+            "osm_id",
+            "osm_type",
+            "completeness",
+            "amenity",
+            "healthcare",
+            "name",
+            "operator",
+            "source",
+            "speciality",
+            "operator_type",
+            "operational_status",
+            "opening_hours",
+            "beds",
+            "staff_doctors",
+            "staff_nurses",
+            "health_amenity_type",
+            "dispensing",
+            "wheelchair",
+            "emergency",
+            "insurance",
+            "water_source",
+            "electricity",
+            "is_in_health_area",
+            "is_in_health_zone",
+            "url",
+            "addr_housenumber",
+            "addr_street",
+            "addr_postcode",
+            "addr_city",
+            "changeset_id",
+            "changeset_version",
+            "changeset_timestamp",
+            "uuid"
+          ],
+          "error": ""
+        }
+      }
+    ]
+  },
+  "food": {
+    "title": "Food and farming",
+    "sample": {
+      "name": "Kenya - Food Prices",
+      "url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download/wfp_food_prices_ken.csv",
+      "reader": "read_csv",
+      "read_kwargs": {},
+      "rows": 28463,
+      "columns": [
+        "date",
+        "admin1",
+        "admin2",
+        "market",
+        "market_id",
+        "latitude",
+        "longitude",
+        "category",
+        "commodity",
+        "commodity_id",
+        "unit",
+        "priceflag",
+        "pricetype",
+        "currency",
+        "price",
+        "usdprice"
+      ],
+      "direct_load_verified": true,
+      "verified_date": "2026-11-02"
+    },
+    "datasets": [
+      {
+        "name": "Kenya - Food Prices",
+        "publisher": "World Food Programme",
+        "page_url": "https://data.humdata.org/dataset/wfp-food-prices-for-kenya",
+        "direct_url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download/wfp_food_prices_ken.csv",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
+          "url": "https://creativecommons.org/licenses/by/3.0/igo/"
+        },
+        "countries": [
+          "Kenya"
+        ],
+        "years": "2006–2026",
+        "approx_size_bytes": 3688329,
+        "approx_size": "3.69 MB",
+        "update_frequency": "Monthly observations; HDX package refreshed about monthly",
+        "missing": "Prices come from selected markets and commodities, so they can miss farm-gate prices, remote markets, informal trading and household transport costs.",
+        "read_kwargs": {
+          "low_memory": false
+        },
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "date,admin1,admin2,market,market_id,latitude,longitude,category,commodity,commod",
+          "downloaded_bytes": 3688329,
+          "parse_ok": true,
+          "rows": 28463,
+          "columns": [
+            "date",
+            "admin1",
+            "admin2",
+            "market",
+            "market_id",
+            "latitude",
+            "longitude",
+            "category",
+            "commodity",
+            "commodity_id",
+            "unit",
+            "priceflag",
+            "pricetype",
+            "currency",
+            "price",
+            "usdprice"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Nigeria - Food Prices",
+        "publisher": "World Food Programme",
+        "page_url": "https://data.humdata.org/dataset/wfp-food-prices-for-nigeria",
+        "direct_url": "https://data.humdata.org/dataset/42db041f-7aaf-4ab4-961f-2a12096861e7/resource/12b51155-0cd3-4806-9924-61ede4077591/download/wfp_food_prices_nga.csv",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
+          "url": "https://creativecommons.org/licenses/by/3.0/igo/"
+        },
+        "countries": [
+          "Nigeria"
+        ],
+        "years": "2002–2026",
+        "approx_size_bytes": 10783280,
+        "approx_size": "10.78 MB",
+        "update_frequency": "Monthly observations; HDX package refreshed about monthly",
+        "missing": "Market coverage is uneven across states and time, and the file does not explain storage losses, trader margins or the price paid by a specific household.",
+        "read_kwargs": {
+          "low_memory": false
+        },
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "date,admin1,admin2,market,market_id,latitude,longitude,category,commodity,commod",
+          "downloaded_bytes": 10783280,
+          "parse_ok": true,
+          "rows": 88391,
+          "columns": [
+            "date",
+            "admin1",
+            "admin2",
+            "market",
+            "market_id",
+            "latitude",
+            "longitude",
+            "category",
+            "commodity",
+            "commodity_id",
+            "unit",
+            "priceflag",
+            "pricetype",
+            "currency",
+            "price",
+            "usdprice"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Rwanda - Food Prices",
+        "publisher": "World Food Programme",
+        "page_url": "https://data.humdata.org/dataset/wfp-food-prices-for-rwanda",
+        "direct_url": "https://data.humdata.org/dataset/a4a84c1c-81d1-491b-9fbe-1955ae736508/resource/8c22eeb5-cc2e-46bc-8a0d-08b7486b2486/download/wfp_food_prices_rwa.csv",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
+          "url": "https://creativecommons.org/licenses/by/3.0/igo/"
+        },
+        "countries": [
+          "Rwanda"
+        ],
+        "years": "2000–2026",
+        "approx_size_bytes": 20031073,
+        "approx_size": "20.03 MB",
+        "update_frequency": "Monthly observations; HDX package refreshed about monthly",
+        "missing": "Frequent observations do not mean every market is observed every month, and local farm-gate, storage and transport conditions are not measured.",
+        "read_kwargs": {
+          "low_memory": false
+        },
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "date,admin1,admin2,market,market_id,latitude,longitude,category,commodity,commod",
+          "downloaded_bytes": 20031073,
+          "parse_ok": true,
+          "rows": 153204,
+          "columns": [
+            "date",
+            "admin1",
+            "admin2",
+            "market",
+            "market_id",
+            "latitude",
+            "longitude",
+            "category",
+            "commodity",
+            "commodity_id",
+            "unit",
+            "priceflag",
+            "pricetype",
+            "currency",
+            "price",
+            "usdprice"
+          ],
+          "error": ""
+        }
+      }
+    ]
+  },
+  "climate": {
+    "title": "Climate",
+    "sample": {
+      "name": "NASA POWER daily weather near Nairobi",
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MAX,PRECTOTCORR&community=AG&longitude=36.817&latitude=-1.286&start=20000101&end=20251231&format=CSV",
+      "reader": "read_csv",
+      "read_kwargs": {
+        "skiprows": 10
+      },
+      "rows": 9497,
+      "columns": [
+        "YEAR",
+        "DOY",
+        "T2M_MAX",
+        "PRECTOTCORR"
+      ],
+      "direct_load_verified": true,
+      "verified_date": "2026-11-02"
+    },
+    "datasets": [
+      {
+        "name": "NASA POWER daily weather near Nairobi",
+        "publisher": "NASA Langley Research Center POWER Project",
+        "page_url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "direct_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MAX,PRECTOTCORR&community=AG&longitude=36.817&latitude=-1.286&start=20000101&end=20251231&format=CSV",
+        "format": "CSV",
+        "license": {
+          "name": "NASA Earth Science Data and Information Policy (free and unrestricted use)",
+          "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-information-guidance"
+        },
+        "countries": [
+          "Kenya (point near Nairobi)"
+        ],
+        "years": "2000–2025",
+        "approx_size_bytes": 195132,
+        "approx_size": "195 KB",
+        "update_frequency": "Daily observations; API extends as NASA source data are released",
+        "missing": "This is a modeled grid cell near Nairobi, so it cannot show neighborhood heat, flash flooding or conditions across Kenya’s varied terrain.",
+        "read_kwargs": {
+          "skiprows": 10
+        },
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "-BEGIN HEADER-\\r\\nNASA/POWER Source Native Resolution Daily Data \\r\\nDates (month/da",
+          "downloaded_bytes": 195132,
+          "parse_ok": true,
+          "rows": 9497,
+          "columns": [
+            "YEAR",
+            "DOY",
+            "T2M_MAX",
+            "PRECTOTCORR"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "NASA POWER daily weather near Lagos",
+        "publisher": "NASA Langley Research Center POWER Project",
+        "page_url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "direct_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MAX,PRECTOTCORR&community=AG&longitude=3.384&latitude=6.455&start=20000101&end=20251231&format=CSV",
+        "format": "CSV",
+        "license": {
+          "name": "NASA Earth Science Data and Information Policy (free and unrestricted use)",
+          "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-information-guidance"
+        },
+        "countries": [
+          "Nigeria (point near Lagos)"
+        ],
+        "years": "2000–2025",
+        "approx_size_bytes": 195337,
+        "approx_size": "195 KB",
+        "update_frequency": "Daily observations; API extends as NASA source data are released",
+        "missing": "One modeled grid cell cannot capture drainage, coastal exposure, informal-settlement heat or weather conditions across Nigeria.",
+        "read_kwargs": {
+          "skiprows": 10
+        },
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "-BEGIN HEADER-\\r\\nNASA/POWER Source Native Resolution Daily Data \\r\\nDates (month/da",
+          "downloaded_bytes": 195337,
+          "parse_ok": true,
+          "rows": 9497,
+          "columns": [
+            "YEAR",
+            "DOY",
+            "T2M_MAX",
+            "PRECTOTCORR"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "NASA POWER daily weather near Kigali",
+        "publisher": "NASA Langley Research Center POWER Project",
+        "page_url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "direct_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MAX,PRECTOTCORR&community=AG&longitude=30.062&latitude=-1.944&start=20000101&end=20251231&format=CSV",
+        "format": "CSV",
+        "license": {
+          "name": "NASA Earth Science Data and Information Policy (free and unrestricted use)",
+          "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-information-guidance"
+        },
+        "countries": [
+          "Rwanda (point near Kigali)"
+        ],
+        "years": "2000–2025",
+        "approx_size_bytes": 195658,
+        "approx_size": "196 KB",
+        "update_frequency": "Daily observations; API extends as NASA source data are released",
+        "missing": "The coarse modeled cell misses hill-by-hill rainfall, landslide exposure, drainage failures and household-level impacts.",
+        "read_kwargs": {
+          "skiprows": 10
+        },
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "-BEGIN HEADER-\\r\\nNASA/POWER Source Native Resolution Daily Data \\r\\nDates (month/da",
+          "downloaded_bytes": 195658,
+          "parse_ok": true,
+          "rows": 9497,
+          "columns": [
+            "YEAR",
+            "DOY",
+            "T2M_MAX",
+            "PRECTOTCORR"
+          ],
+          "error": ""
+        }
+      }
+    ]
+  },
+  "learning": {
+    "title": "Learning",
+    "sample": {
+      "name": "Primary school completion rate",
+      "url": "https://ourworldindata.org/grapher/school-completion.csv?v=1&csvType=full&useColumnShortNames=false",
+      "reader": "read_csv",
+      "read_kwargs": {},
+      "rows": 7390,
+      "columns": [
+        "Entity",
+        "Code",
+        "Year",
+        "Primary education"
+      ],
+      "direct_load_verified": true,
+      "verified_date": "2026-11-02"
+    },
+    "datasets": [
+      {
+        "name": "Primary school completion rate",
+        "publisher": "UNESCO Institute for Statistics, with minor processing by Our World in Data",
+        "page_url": "https://ourworldindata.org/grapher/school-completion",
+        "direct_url": "https://ourworldindata.org/grapher/school-completion.csv?v=1&csvType=full&useColumnShortNames=false",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
+          "url": "https://databrowser.uis.unesco.org/terms-and-conditions"
+        },
+        "countries": [
+          "Nigeria",
+          "Kenya",
+          "Rwanda",
+          "global"
+        ],
+        "years": {
+          "Nigeria": "1981–2025",
+          "Kenya": "1981–2025",
+          "Rwanda": "1981–2025"
+        },
+        "approx_size_bytes": 176839,
+        "approx_size": "177 KB",
+        "update_frequency": "Annual; next source refresh expected in 2027",
+        "missing": "The annual series is modeled to fill gaps and shows completion, not whether pupils learned, repeated grades, faced disability barriers or lacked devices and data.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "Entity,Code,Year,Primary education\\nAfghanistan,AFG,1981,9.24\\nAfghanistan,AFG,198",
+          "downloaded_bytes": 176839,
+          "parse_ok": true,
+          "rows": 7390,
+          "columns": [
+            "Entity",
+            "Code",
+            "Year",
+            "Primary education"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Children one year before primary school who are out of school",
+        "publisher": "UNESCO Institute for Statistics, with minor processing by Our World in Data",
+        "page_url": "https://ourworldindata.org/grapher/children-not-in-school",
+        "direct_url": "https://ourworldindata.org/grapher/children-not-in-school.csv?v=1&csvType=full&useColumnShortNames=false",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
+          "url": "https://databrowser.uis.unesco.org/terms-and-conditions"
+        },
+        "countries": [
+          "Nigeria",
+          "Kenya",
+          "Rwanda",
+          "global"
+        ],
+        "years": {
+          "Nigeria": "2023 only",
+          "Kenya": "2001–2023 (10 observations)",
+          "Rwanda": "2016–2024 (6 observations)"
+        },
+        "approx_size_bytes": 80637,
+        "approx_size": "81 KB",
+        "update_frequency": "Annual, with irregular country reporting",
+        "missing": "The target countries have sparse years, and national averages hide district, disability, gender, displacement and household-cost barriers.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "Entity,Code,Year,Pre-primary age\\nAlbania,ALB,1999,42.03412\\nAlbania,ALB,2000,42.9",
+          "downloaded_bytes": 80637,
+          "parse_ok": true,
+          "rows": 2972,
+          "columns": [
+            "Entity",
+            "Code",
+            "Year",
+            "Pre-primary age"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Adult literacy rate",
+        "publisher": "UNESCO Institute for Statistics, with minor processing by Our World in Data",
+        "page_url": "https://ourworldindata.org/grapher/literacy",
+        "direct_url": "https://ourworldindata.org/grapher/literacy.csv?v=1&csvType=full&useColumnShortNames=false",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 3.0 IGO (CC BY 3.0 IGO)",
+          "url": "https://databrowser.uis.unesco.org/terms-and-conditions"
+        },
+        "countries": [
+          "Nigeria",
+          "Kenya",
+          "Rwanda",
+          "global"
+        ],
+        "years": {
+          "Nigeria": "1991–2024 (6 observations)",
+          "Kenya": "2000 only",
+          "Rwanda": "1978–2022 (8 observations)"
+        },
+        "approx_size_bytes": 58602,
+        "approx_size": "59 KB",
+        "update_frequency": "Annual, with irregular survey years",
+        "missing": "Literacy is measured rarely and inconsistently, and a basic read/write measure does not show practical, digital or language-specific skills.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "Entity,Code,Year,Literacy rate among adults\\nAfghanistan,AFG,1979,18.16\\nAfghanist",
+          "downloaded_bytes": 58602,
+          "parse_ok": true,
+          "rows": 1833,
+          "columns": [
+            "Entity",
+            "Code",
+            "Year",
+            "Literacy rate among adults"
+          ],
+          "error": ""
+        }
+      }
+    ]
+  },
+  "money": {
+    "title": "Money and work",
+    "sample": {
+      "name": "Mobile money account usage",
+      "url": "https://ourworldindata.org/grapher/mobile-money-account-usage.csv?v=1&csvType=full&useColumnShortNames=false",
+      "reader": "read_csv",
+      "read_kwargs": {},
+      "rows": 264,
+      "columns": [
+        "Entity",
+        "Code",
+        "Year",
+        "Share of people aged 15+ using a mobile money account"
+      ],
+      "direct_load_verified": true,
+      "verified_date": "2026-11-02"
+    },
+    "datasets": [
+      {
+        "name": "Mobile money account usage",
+        "publisher": "World Bank Global Findex, processed by Our World in Data",
+        "page_url": "https://ourworldindata.org/grapher/mobile-money-account-usage",
+        "direct_url": "https://ourworldindata.org/grapher/mobile-money-account-usage.csv?v=1&csvType=full&useColumnShortNames=false",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"
+        },
+        "countries": [
+          "Nigeria",
+          "Kenya",
+          "Rwanda",
+          "global"
+        ],
+        "years": {
+          "Nigeria": "2014, 2017, 2021",
+          "Kenya": "2014, 2017, 2021",
+          "Rwanda": "2014, 2017"
+        },
+        "approx_size_bytes": 8173,
+        "approx_size": "8 KB",
+        "update_frequency": "Survey waves, historically about every three years",
+        "missing": "A few national survey waves cannot show agent reliability, fees, failed transactions, gender gaps or people who share phones and accounts.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "Entity,Code,Year,Share of people aged 15+ using a mobile money account\\nAfghanist",
+          "downloaded_bytes": 8173,
+          "parse_ok": true,
+          "rows": 264,
+          "columns": [
+            "Entity",
+            "Code",
+            "Year",
+            "Share of people aged 15+ using a mobile money account"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Share of workers in vulnerable employment",
+        "publisher": "ILO modelled estimates and World Bank staff estimates, processed by Our World in Data",
+        "page_url": "https://ourworldindata.org/grapher/share-in-vulnerable-employment",
+        "direct_url": "https://ourworldindata.org/grapher/share-in-vulnerable-employment.csv?v=1&csvType=full&useColumnShortNames=false",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators"
+        },
+        "countries": [
+          "Nigeria",
+          "Kenya",
+          "Rwanda",
+          "global"
+        ],
+        "years": {
+          "Nigeria": "1991–2025",
+          "Kenya": "1991–2025",
+          "Rwanda": "1991–2025"
+        },
+        "approx_size_bytes": 205345,
+        "approx_size": "205 KB",
+        "update_frequency": "Annual modelled estimates",
+        "missing": "Modeled national totals cannot reveal daily earnings, unpaid work, job security, seasonal shocks or the local forms of informality behind the estimate.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "Entity,Code,Year,Share in vulnerable employment\\nAfghanistan,AFG,1991,95.33984\\nAf",
+          "downloaded_bytes": 205345,
+          "parse_ok": true,
+          "rows": 6986,
+          "columns": [
+            "Entity",
+            "Code",
+            "Year",
+            "Share in vulnerable employment"
+          ],
+          "error": ""
+        }
+      },
+      {
+        "name": "Employment-to-population ratio",
+        "publisher": "ILO modelled estimates via World Bank, processed by Our World in Data",
+        "page_url": "https://ourworldindata.org/grapher/employment-to-population-ratio",
+        "direct_url": "https://ourworldindata.org/grapher/employment-to-population-ratio.csv?v=1&csvType=full&useColumnShortNames=false",
+        "format": "CSV",
+        "license": {
+          "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators"
+        },
+        "countries": [
+          "Nigeria",
+          "Kenya",
+          "Rwanda",
+          "global"
+        ],
+        "years": {
+          "Nigeria": "1991–2025",
+          "Kenya": "1991–2025",
+          "Rwanda": "1991–2025"
+        },
+        "approx_size_bytes": 187993,
+        "approx_size": "188 KB",
+        "update_frequency": "Annual modelled estimates",
+        "missing": "Being counted as employed says nothing about hours, income, safety, benefits, unpaid family work or whether the job is formal.",
+        "read_kwargs": {},
+        "verification": {
+          "date": "2026-11-02",
+          "result": "pass",
+          "http_status": 200,
+          "page_http_status": 200,
+          "license_http_status": 200,
+          "content_type": "text/csv",
+          "first_bytes": "Entity,Code,Year,Employment rate\\nAfghanistan,AFG,1991,43.382\\nAfghanistan,AFG,199",
+          "downloaded_bytes": 187993,
+          "parse_ok": true,
+          "rows": 6986,
+          "columns": [
+            "Entity",
+            "Code",
+            "Year",
+            "Employment rate"
+          ],
+          "error": ""
+        }
+      }
+    ]
+  }
+}

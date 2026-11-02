@@ -1,0 +1,13 @@
+name,type,town,country,lat,lon,open_hours,services,wait_minutes,last_checked
+Example Clinic A,Primary health centre,Abeokuta,Nigeria,7.1557,3.3451,08:00-16:00,antenatal; immunisation,45,2026-10-12
+Example Clinic B,Pharmacy,Abeokuta,Nigeria,7.1475,3.3619,08:00-20:00,medicines; malaria tests,10,2026-10-14
+Example Clinic C,General hospital,Ikeja,Nigeria,6.6018,3.3515,24 hours,emergency; maternity; lab,120,2026-10-09
+Example Clinic D,Primary health centre,Ikeja,Nigeria,6.5965,3.3421,08:00-16:00,immunisation; family planning,60,2026-10-11
+Example Clinic E,Community health post,Lagos,Nigeria,6.4550,3.3941,09:00-15:00,malaria tests; first aid,25,2026-10-02
+Example Clinic F,Dispensary,Nairobi,Kenya,-1.2864,36.8172,08:00-17:00,medicines; HIV testing,35,2026-10-15
+Example Clinic G,Sub-county hospital,Nairobi,Kenya,-1.3005,36.7840,24 hours,emergency; maternity; lab,150,2026-10-07
+Example Clinic H,Health centre,Kisumu,Kenya,-0.0917,34.7680,08:00-17:00,antenatal; immunisation; TB,70,2026-10-13
+Example Clinic I,Dispensary,Kisumu,Kenya,-0.1022,34.7617,08:00-16:00,medicines; malaria tests,20,2026-09-29
+Example Clinic J,Health centre,Kigali,Rwanda,-1.9441,30.0619,07:00-17:00,antenatal; immunisation; nutrition,40,2026-10-16
+Example Clinic K,District hospital,Kigali,Rwanda,-1.9706,30.1044,24 hours,emergency; surgery; maternity,95,2026-10-10
+Example Clinic L,Health post,Huye,Rwanda,-2.5967,29.7394,08:00-15:00,first aid; family planning,15,2026-10-05
